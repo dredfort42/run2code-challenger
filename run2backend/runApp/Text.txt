@@ -1,0 +1,12 @@
+{
+    "id": 1,
+    "email": "heigan11@gmail.com",
+    "password": "123"
+}
+
+scp runApp-0.0.1-SNAPSHOT.jar jraye@51.250.19.189:/home/jraye
+ssh jraye@51.250.19.189
+
+sudo -i -u postgres
+psql -d runApp
+select * from run_training;
