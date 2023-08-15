@@ -10,3 +10,15 @@ ssh jraye@51.250.19.189
 sudo -i -u postgres
 psql -d runApp
 select * from run_training;
+
+{
+    "user":
+    {
+        "id": 1,
+        "email": "heigan11@gmail.com",
+        "password": "123"
+    },
+    "distance": 100.1,
+    "elapsed_time": 10000,
+    "beginDateTime": "1999-01-08T04:05:07"
+}

@@ -24,6 +24,11 @@ public class UserController {
         return userService.findById(id);
     }
 
+    @GetMapping(path="/userByEmail/{email}")
+    public @ResponseBody User getUserByEmail(@PathVariable("email") String email) {
+        return userService.findUserByEmail(email);
+    }
+
     @PostMapping(path="/newUser")
     public @ResponseBody User addNewUser(@RequestBody String msg) throws JsonProcessingException {
         ObjectMapper objectMapper = new ObjectMapper();

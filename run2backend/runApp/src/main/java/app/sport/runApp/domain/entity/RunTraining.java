@@ -1,6 +1,5 @@
 package app.sport.runApp.domain.entity;
 
-import com.sun.istack.internal.NotNull;
 import lombok.*;
 
 import javax.persistence.*;
@@ -30,5 +29,5 @@ public class RunTraining {
     private long elapsed_time;
 
     @Column(name = "begin_date_time", columnDefinition = "TIMESTAMP")
-    private LocalDateTime begin_date_time;
+    private LocalDateTime beginDateTime;
 }
